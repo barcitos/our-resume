@@ -15,8 +15,8 @@ export const TypewriterText = () => {
   useEffect(() => {
     gsap
       .timeline()
-      .fromTo(cursorRef.current, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.7, repeat: -1, ease: 'steps(1)' })
-      .to(textRef.current, { duration: 5, text: { value: TEXT }, ease: 'none' });
+      .fromTo(cursorRef.current, { autoAlpha: 0 }, { autoAlpha: 1, duration: 1, repeat: -1, ease: 'steps(1)' })
+      .to(textRef.current, { duration: 3, text: { value: TEXT }, ease: 'none' });
   }, []);
 
   return (

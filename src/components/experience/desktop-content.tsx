@@ -17,7 +17,7 @@ export const DesktopContent = ({ activeSection, activeTab }: Props) => {
   );
 
   return (
-    <Stack sx={{ justifyContent: 'center', width: '100%' }}>
+    <Stack sx={{ justifyContent: 'center', maxWidth: 750 }}>
       {job && (
         <Stack
           key={`${activeTab}-${activeSection}`}
@@ -44,7 +44,9 @@ export const DesktopContent = ({ activeSection, activeTab }: Props) => {
           >
             {job.project}
           </Typography>
-          <Typography sx={{ color: '#ccc', fontSize: '0.85rem', marginBottom: 2 }}>{job.description}</Typography>
+          <Typography sx={{ color: '#ccc', fontSize: '0.85rem', marginBottom: 2, textAlign: 'justify' }}>
+            {job.description}
+          </Typography>
           {job.links && (
             <>
               <Typography sx={{ color: '#666', fontSize: '0.65rem', letterSpacing: 1, marginBottom: 1 }}>LINKS</Typography>

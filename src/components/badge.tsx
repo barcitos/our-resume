@@ -35,15 +35,22 @@ export const Badge = () => (
       variant="caption"
       sx={{
         backgroundColor: '#33333350',
+        backdropFilter: 'blur(2px)',
         color: '#fff',
         display: 'inline-flex',
+        flexDirection: 'column',
         fontWeight: 'bold',
         padding: '8px 12px',
         textAlign: 'center',
+        '& hr': {
+          border: 0,
+          borderTop: '1px solid rgba(255, 255, 255, 0.2)',
+          width: '100%',
+        },
       }}
     >
       REMOTE
-      <br />
+      <hr />
       🇨🇿 CZECHIA
     </Typography>
     <Link href="mailto:collab@slarka.com" target="_blank">
@@ -58,6 +65,7 @@ export const Badge = () => (
           fontWeight: 'bold',
           padding: '8px 12px',
           textAlign: 'center',
+          '&:hover': { background: 'linear-gradient(85deg, #ffb4a2, #75c963)' },
         }}
       >
         AVAILABLE NOW

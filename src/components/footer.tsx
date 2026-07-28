@@ -20,7 +20,7 @@ export const Footer = () => (
         <Link
           href="https://github.com/barcitos/our-resume"
           target="_blank"
-          sx={{ color: 'white', textDecorationColor: 'inherit !important' }}
+          sx={{ color: 'white', textDecorationColor: 'inherit !important', '&:hover': { opacity: 0.8 } }}
         >
           see the code
         </Link>

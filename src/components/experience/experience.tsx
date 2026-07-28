@@ -31,7 +31,7 @@ export const Experience = () => {
           </Typography>
           <Tabs onChange={handleTabChange} tab={activeTab} />
         </Stack>
-        <Stack direction="row" sx={{ alignItems: 'center' }}>
+        <Stack direction="row" sx={{ alignItems: 'center', gap: 10 }}>
           <RadialMenu activeSection={activeSection} activeTab={activeTab} onChange={handleSectionChange} />
           <DesktopContent activeSection={activeSection} activeTab={activeTab} />
         </Stack>

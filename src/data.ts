@@ -18,7 +18,7 @@ export const JOBS: Record<Name, Array<Job>> = {
       project: 'Virtual Earth Asset Management & Crypto Wallet',
       sector: 'Crypto',
       description:
-        'Implementation of features based on Figma designs and customer requirements for Districts - a virtual representation of the Earth - and Freehold Wallet - focusing on crypto asset management and investments.',
+        'Implementation of features based on Figma designs and customer requirements for Districts (a virtual representation of the Earth) and Freehold Wallet (crypto asset management and investments). Setup of the MUI theme from scratch. Used GraphQL and React Query to efficiently fetch, cache, and synchronize data. Wrote unit tests with Jest and created Storybook stories for component documentation.',
       techStack: ['Typescript', 'React', 'Material UI', 'GraphQL', 'Nx', 'Storybook', 'Jest', 'React Query', 'Figma'],
       links: ['https://app.districts.xyz', 'https://app.freehold.finance'],
     },
@@ -27,7 +27,8 @@ export const JOBS: Record<Name, Array<Job>> = {
       company: 'Deutsche Börse',
       project: 'Financial Message Exchange',
       sector: 'Finance',
-      description: 'Redesign of a message exchange application based on provided designs, visualization in Storybook.',
+      description:
+        'Redesign of a message exchange application based on provided designs and its visualization in Storybook. Collaborated with colleagues from Luxembourg.',
       techStack: ['Typescript', 'React', 'Material UI', 'Nx', 'Storybook'],
     },
     {
@@ -54,7 +55,8 @@ export const JOBS: Record<Name, Array<Job>> = {
       company: 'Vodafone',
       project: 'Eshop Platform',
       sector: 'Telecommunications',
-      description: 'Implementing new sections of the new eshop solution, writing component tests with Jest.',
+      description:
+        'Added new features for the new eshop solution, writing component tests with Jest and using Storybook for visual presentation.',
       techStack: ['Typescript', 'React', 'Next.js', 'Storybook', 'react-hook-form'],
       links: ['https://vodafone.cz/eshop'],
     },
@@ -64,15 +66,15 @@ export const JOBS: Record<Name, Array<Job>> = {
       project: 'Attendance & Shift Tracking PWA',
       sector: 'IT Services',
       description:
-        'Redesign of the internal website. Development of new features in a PWA for tracking attendance and managing shifts.',
+        'Redesign of the internal website. Development of new features in a PWA for tracking attendance and managing shifts based on Figma specs.',
       techStack: ['Typescript', 'React', 'Redux', 'GraphQL', 'Figma'],
     },
     {
       id: '7',
       company: 'Economia',
-      project: 'News Portal Redesign, New Application Development',
+      project: 'News Portal & Culinary Platform',
       sector: 'Media',
-      description: 'Redesign of Aktualne.cz. Vareni.cz Next.js application development.',
+      description: 'Built new features as part of a redesign of Aktualne.cz and Vareni.cz.',
       techStack: ['React', 'Redux', 'Next.js', 'GraphQL'],
       links: ['https://aktualne.cz', 'https://vareni.cz'],
     },
