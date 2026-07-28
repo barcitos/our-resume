@@ -1,0 +1,2 @@
+export const RADIAL_MENU_RADIUS = 180;
+export const RADIAL_MENU_INNER_RADIUS = 100;

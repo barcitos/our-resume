@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [
+    "./dist",
+    "./coverage",
+    "./.nx/cache",
+    "./.nx/workspace-data"
+  ],
+  "singleQuote": true,
+  "printWidth": 125,
+  "trailingComma": "all",
+  "sortImports": {
+    "internalPattern": ["@pet-app/"],
+    "customGroups": [
+      {
+        "groupName": "react-libs",
+        "elementNamePattern": ["react", "react-**"]
+      }
+    ],
+    "groups": [
+      "react-libs",
+      "type-import",
+      ["value-builtin", "value-external"],
+      "type-internal",
+      "value-internal",
+      ["type-parent", "value-parent"],
+      ["type-sibling", "value-sibling"],
+      ["type-index", "value-index"],
+      "unknown"
+    ]
+  }
+}
