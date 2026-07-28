@@ -26,7 +26,7 @@ const CONTACT_ITEMS = [
 ];
 
 export const Contact = () => (
-  <Stack direction={{ xs: 'column', xl: 'row' }} sx={{ paddingX: 2 }}>
+  <Stack direction={{ xs: 'column', xl: 'row' }} sx={{ paddingX: 2, gap: 4 }}>
     <Typography variant="subtitle1" sx={{ color: '#d0d0d0', textAlign: { xs: 'center', md: 'left' } }}>
       We are always excited to collaborate on new ideas, join inspiring teams, or help bring your next big project to life.
       Whether you have a clear vision or just want to discuss a potential partnership, we are open to chat. Let's make great

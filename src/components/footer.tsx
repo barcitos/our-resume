@@ -3,7 +3,7 @@ import { Link, Stack, Typography } from '@mui/material';
 export const Footer = () => (
   <Stack
     component="footer"
-    direction={{ xs: 'column', sm: 'row' }}
+    direction={{ xs: 'column', md: 'row' }}
     sx={{
       alignItems: 'center',
       borderTop: '2px solid rgba(255, 255, 255, 0.08)',
@@ -11,9 +11,14 @@ export const Footer = () => (
       paddingTop: 4,
     }}
   >
-    <Typography variant="caption" sx={{ color: '#666', textAlign: 'center' }}>
-      © {new Date().getFullYear()} Barbora & Patrik Šlárka. All rights reserved.
-    </Typography>
+    <Stack direction={{ xs: 'column', md: 'row' }}>
+      <Typography variant="caption" sx={{ color: '#666', textAlign: 'center' }}>
+        © {new Date().getFullYear()} Barbora & Patrik Šlárka.&nbsp;
+      </Typography>
+      <Typography variant="caption" sx={{ color: '#666', textAlign: 'center' }}>
+        All rights reserved.
+      </Typography>
+    </Stack>
     <Stack direction="row" sx={{ gap: 1, alignItems: 'center' }}>
       <Typography variant="caption" sx={{ color: '#666' }}>
         Built with React & Material UI -{' '}

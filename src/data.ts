@@ -107,7 +107,7 @@ export const JOBS: Record<Name, Array<Job>> = {
         'Azure DevOps',
         'Wagmi',
       ],
-      links: ['https://districts.xyz'],
+      links: ['https://app.districts.xyz'],
     },
     {
       id: '2',

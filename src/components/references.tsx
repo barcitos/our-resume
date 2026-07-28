@@ -27,7 +27,7 @@ const REFERENCES_DATA = [
 export const References = () => (
   <Stack component="section" sx={{ gap: { xs: 2, md: 3 } }}>
     {REFERENCES_DATA.map(({ author, company, role, quote }) => (
-      <Stack key={quote} sx={{ background: 'rgb(67 67 67 / 0.05)', gap: 3, padding: 4 }}>
+      <Stack key={quote} sx={{ background: '#FFFFFF06', gap: 3, padding: 4 }}>
         <Typography variant="subtitle1" sx={{ color: '#d0d0d0', maxWidth: '90%' }}>
           "{quote}"
         </Typography>

@@ -6,14 +6,14 @@ import { THEME } from './theme';
 
 export const App = () => (
   <ThemeProvider theme={THEME}>
-    <GlobalStyles styles={{ body: { margin: 0 } }} />
+    <GlobalStyles styles={{ html: { overscrollBehavior: 'none' }, body: { margin: 0 } }} />
     <Stack>
       <Background>
         <Stack sx={{ paddingX: { xs: 2, sm: 4, lg: 20, xl: 30 }, paddingY: { xs: 6, md: 10 } }}>
           <Badge />
           <Stack sx={{ backdropFilter: 'blur(2px)', gap: 10, padding: 2 }}>
             <Intro />
-            <Stack sx={{ gap: 10 }}>
+            <Stack sx={{ gap: { xs: 7, md: 10 } }}>
               <Section title="Who we are">
                 <AboutUs />
               </Section>

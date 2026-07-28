@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const Section = ({ children, hasIcon = false, title }: Props) => (
-  <Stack sx={{ gap: 5 }}>
+  <Stack sx={{ gap: { xs: 2, md: 4 } }}>
     <Title hasIcon={hasIcon}>{title}</Title>
     {children}
   </Stack>
