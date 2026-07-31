@@ -1,0 +1,43 @@
+name: build-deploy.yml
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build-deploy:
+    name: 'Build & deploy'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+
+      - name: 'Enable Corepack'
+        run: corepack enable
+
+      - name: 'Setup Node'
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: 24
+          cache: 'yarn'
+
+      - name: 'Install dependencies'
+        run: yarn install --immutable
+
+      - name: 'Build the app'
+        run: yarn build
+
+      - name: 'Configure AWS Credentials'
+        uses: aws-actions/configure-aws-credentials@e6de054238d6b7531b4efff3b6587d9aade6a06c # v6.2.3
+        with:
+          role-to-assume: ${{ secrets.AWS_ACCOUNT_ARN }}
+          aws-region: us-east-1
+
+      - name: 'Deploy to AWS S3'
+        run: aws s3 sync ./dist s3://slarka.com --delete
